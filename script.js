@@ -2,22 +2,29 @@ function addNumbers(firstNumber, secondNumber) {
     return firstNumber + secondNumber;
 };
 
-console.log(addNumbers(44,20));
-
 function subtractNumbers(firstNumber, secondNumber) {
     return firstNumber - secondNumber;
 };
-
-console.log(subtractNumbers(44,20));
 
 function multiplyNumbers(firstNumber, secondNumber) {
     return firstNumber * secondNumber;
 };
 
-console.log(multiplyNumbers(44,20));
-
 function divideNumbers(firstNumber, secondNumber) {
     return firstNumber / secondNumber;
 };
 
-console.log(divideNumbers(44,20));
+function calculateResult(firstNumber, secondNumber, operator) {
+    switch(true) {
+        case (operator === '+'):
+            return addNumbers(firstNumber, secondNumber);
+        case (operator === '-'):
+            return subtractNumbers(firstNumber, secondNumber);
+        case (operator === '*'):
+            return multiplyNumbers(firstNumber, secondNumber);
+        case (operator === '/'):
+            return divideNumbers(firstNumber, secondNumber);
+        };    
+};
+
+console.log(calculateResult(44, 20,'/'));
