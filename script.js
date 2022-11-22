@@ -27,4 +27,20 @@ function calculateResult(firstNumber, secondNumber, operator) {
         };    
 };
 
-console.log(calculateResult(44, 20,'/'));
+const display = document.getElementById('display');
+
+function updateDisplay(currentValue, currentID) {
+    if (currentID == 'allClear' || currentID == 'equalsSign') {
+        display.value = '';
+    } else {
+        display.value = currentValue;
+    };
+};
+
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        updateDisplay(button.textContent, button.id);
+    });
+});
