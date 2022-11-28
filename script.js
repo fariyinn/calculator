@@ -33,7 +33,7 @@ function updateDisplay(currentValue, currentID) {
     if (currentID == 'allClear' || currentID == 'equalsSign') {
         display.value = '';
     } else {
-        display.value = currentValue;
+        display.value += currentValue;
     };
 };
 
