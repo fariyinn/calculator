@@ -20,7 +20,7 @@ function divideNumbers(firstOperand, secondOperand) {
 };
 
 function calculateResult(firstOperand, secondOperand, operator) {
-    switch(true) {
+    switch (true) {
         case (operator === '+'):
             return addNumbers(firstOperand, secondOperand);
         case (operator === '-'):
@@ -35,20 +35,27 @@ function calculateResult(firstOperand, secondOperand, operator) {
 const display = document.getElementById('display');
 
 function updateDisplay(currentValue) {
-    if (currentValue == 'AC') {
-        clearAllOperationValues();
-    } else if (currentValue == '+' || currentValue == '-' || currentValue == '×' || currentValue == '÷') {
-        storeFirstOperand();
-        storeOperator(currentValue);
-        console.log(`first operand is ${firstOperand}`);
-        console.log(`operator is ${operator}`);
-    } else if (currentValue == '=') {
-        storeSecondOperand();
-        storeResult();
-        console.log(`second operand is ${secondOperand}`);
-        console.log(`result is ${result}`);
-    } else {
-        display.value += currentValue;
+    switch (true) {
+        case (currentValue == 'AC'):
+            clearAllOperationValues();
+            break;
+
+        case (currentValue == '+' || currentValue == '-' || currentValue == '×' || currentValue == '÷'):
+            storeFirstOperand();
+            storeOperator(currentValue);
+            console.log(`first operand is ${firstOperand}`);
+            console.log(`operator is ${operator}`);
+            break;
+
+        case (currentValue == '='):
+            storeSecondOperand();
+            storeResult();
+            console.log(`second operand is ${secondOperand}`);
+            console.log(`result is ${result}`);
+            break;
+            
+        default:
+            display.value += currentValue;
     };
 };
 
