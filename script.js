@@ -1,3 +1,8 @@
+let firstOperand = '';
+let secondOperand = '';
+let operator = '';
+let result = '';
+
 function addNumbers(firstNumber, secondNumber) {
     return firstNumber + secondNumber;
 };
