@@ -25,9 +25,9 @@ function calculateResult(firstNumber, secondNumber, operator) {
             return addNumbers(firstNumber, secondNumber);
         case (operator === '-'):
             return subtractNumbers(firstNumber, secondNumber);
-        case (operator === '*'):
+        case (operator === '×'):
             return multiplyNumbers(firstNumber, secondNumber);
-        case (operator === '/'):
+        case (operator === '÷'):
             return divideNumbers(firstNumber, secondNumber);
         };    
 };
