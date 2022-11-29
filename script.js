@@ -38,11 +38,10 @@ function updateDisplay(currentValue) {
     if (currentValue == 'AC') {
         clearAllOperationValues();
     } else if (currentValue == '+' || currentValue == '-' || currentValue == '×' || currentValue == '÷') {
-        firstOperand = display.value;
-        operator = currentValue;
+        storeFirstOperand();
+        storeOperator(currentValue);
         console.log(`first operand is ${firstOperand}`);
         console.log(`operator is ${operator}`);
-        display.value = '';
     } else if (currentValue == '=') {
         secondOperand = display.value;
         console.log(`second operand is ${secondOperand}`);
@@ -67,5 +66,14 @@ function clearAllOperationValues() {
     secondOperand = '';
     operator = '';
     result = '';
+    display.value = '';
+};
+
+function storeFirstOperand() {
+    firstOperand = display.value;
+};
+
+function storeOperator(currentValue) {
+    operator = currentValue;
     display.value = '';
 };
