@@ -36,7 +36,7 @@ const display = document.getElementById('display');
 
 function updateDisplay(currentValue) {
     if (currentValue == 'AC') {
-        display.value = '';
+        clearAllOperationValues();
     } else if (currentValue == '+' || currentValue == '-' || currentValue == '×' || currentValue == '÷') {
         firstOperand = display.value;
         operator = currentValue;
@@ -61,3 +61,11 @@ buttons.forEach((button) => {
         updateDisplay(button.textContent);
     });
 });
+
+function clearAllOperationValues() {
+    firstOperand = '';
+    secondOperand = '';
+    operator = '';
+    result = '';
+    display.value = '';
+};
