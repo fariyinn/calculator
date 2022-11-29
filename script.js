@@ -37,6 +37,10 @@ const display = document.getElementById('display');
 function updateDisplay(currentValue, currentID) {
     if (currentID == 'allClear' || currentID == 'equalsSign') {
         display.value = '';
+    } else if (currentValue == '+' || currentValue == '-' || currentValue == '×' || currentValue == '÷') {
+        firstOperand = display.value;
+        console.log(`first operand is ${firstOperand}`);
+        display.value += currentValue;
     } else {
         display.value += currentValue;
     };
