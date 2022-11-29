@@ -3,32 +3,32 @@ let secondOperand = '';
 let operator = '';
 let result = '';
 
-function addNumbers(firstNumber, secondNumber) {
-    return parseFloat(firstNumber) + parseFloat(secondNumber);
+function addNumbers(firstOperand, secondOperand) {
+    return parseFloat(firstOperand) + parseFloat(secondOperand);
 };
 
-function subtractNumbers(firstNumber, secondNumber) {
-    return firstNumber - secondNumber;
+function subtractNumbers(firstOperand, secondOperand) {
+    return firstOperand - secondOperand;
 };
 
-function multiplyNumbers(firstNumber, secondNumber) {
-    return firstNumber * secondNumber;
+function multiplyNumbers(firstOperand, secondOperand) {
+    return firstOperand * secondOperand;
 };
 
-function divideNumbers(firstNumber, secondNumber) {
-    return firstNumber / secondNumber;
+function divideNumbers(firstOperand, secondOperand) {
+    return firstOperand / secondOperand;
 };
 
-function calculateResult(firstNumber, secondNumber, operator) {
+function calculateResult(firstOperand, secondOperand, operator) {
     switch(true) {
         case (operator === '+'):
-            return addNumbers(firstNumber, secondNumber);
+            return addNumbers(firstOperand, secondOperand);
         case (operator === '-'):
-            return subtractNumbers(firstNumber, secondNumber);
+            return subtractNumbers(firstOperand, secondOperand);
         case (operator === '×'):
-            return multiplyNumbers(firstNumber, secondNumber);
+            return multiplyNumbers(firstOperand, secondOperand);
         case (operator === '÷'):
-            return divideNumbers(firstNumber, secondNumber);
+            return divideNumbers(firstOperand, secondOperand);
         };    
 };
 
