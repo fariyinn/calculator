@@ -4,7 +4,7 @@ let operator = '';
 let result = '';
 
 function addNumbers(firstNumber, secondNumber) {
-    return firstNumber + secondNumber;
+    return parseFloat(firstNumber) + parseFloat(secondNumber);
 };
 
 function subtractNumbers(firstNumber, secondNumber) {
