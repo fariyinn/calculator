@@ -43,7 +43,7 @@ function updateDisplay(currentValue) {
         console.log(`first operand is ${firstOperand}`);
         console.log(`operator is ${operator}`);
     } else if (currentValue == '=') {
-        secondOperand = display.value;
+        storeSecondOperand();
         console.log(`second operand is ${secondOperand}`);
         result = calculateResult(firstOperand,secondOperand,operator);
         display.value = result;
@@ -76,4 +76,8 @@ function storeFirstOperand() {
 function storeOperator(currentValue) {
     operator = currentValue;
     display.value = '';
+};
+
+function storeSecondOperand() {
+    secondOperand = display.value;
 };
