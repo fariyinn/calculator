@@ -46,6 +46,9 @@ function updateDisplay(currentValue) {
     } else if (currentValue == '=') {
         secondOperand = display.value;
         console.log(`second operand is ${secondOperand}`);
+        result = calculateResult(firstOperand,secondOperand,operator);
+        display.value = result;
+        console.log(`result is ${result}`);
     } else {
         display.value += currentValue;
     };
