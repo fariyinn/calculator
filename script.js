@@ -3,36 +3,14 @@ let secondOperand = '';
 let operator = '';
 let result = '';
 
-function addNumbers(firstOperand, secondOperand) {
-    return parseFloat(firstOperand) + parseFloat(secondOperand);
-};
-
-function subtractNumbers(firstOperand, secondOperand) {
-    return firstOperand - secondOperand;
-};
-
-function multiplyNumbers(firstOperand, secondOperand) {
-    return firstOperand * secondOperand;
-};
-
-function divideNumbers(firstOperand, secondOperand) {
-    return firstOperand / secondOperand;
-};
-
-function calculateResult(firstOperand, secondOperand, operator) {
-    switch (true) {
-        case (operator === '+'):
-            return addNumbers(firstOperand, secondOperand);
-        case (operator === '-'):
-            return subtractNumbers(firstOperand, secondOperand);
-        case (operator === '×'):
-            return multiplyNumbers(firstOperand, secondOperand);
-        case (operator === '÷'):
-            return divideNumbers(firstOperand, secondOperand);
-        };    
-};
-
 const display = document.getElementById('display');
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        updateDisplay(button.textContent);
+    });
+});
 
 function updateDisplay(currentValue) {
     switch (true) {
@@ -53,19 +31,11 @@ function updateDisplay(currentValue) {
             console.log(`second operand is ${secondOperand}`);
             console.log(`result is ${result}`);
             break;
-            
+
         default:
             display.value += currentValue;
     };
 };
-
-const buttons = document.querySelectorAll('button');
-
-buttons.forEach((button) => {
-    button.addEventListener('click', () => {
-        updateDisplay(button.textContent);
-    });
-});
 
 function clearAllOperationValues() {
     firstOperand = '';
@@ -91,4 +61,33 @@ function storeSecondOperand() {
 function storeResult() {
     result = calculateResult(firstOperand,secondOperand,operator);
     display.value = result;
+};
+
+function calculateResult(firstOperand, secondOperand, operator) {
+    switch (true) {
+        case (operator === '+'):
+            return addNumbers(firstOperand, secondOperand);
+        case (operator === '-'):
+            return subtractNumbers(firstOperand, secondOperand);
+        case (operator === '×'):
+            return multiplyNumbers(firstOperand, secondOperand);
+        case (operator === '÷'):
+            return divideNumbers(firstOperand, secondOperand);
+        };    
+};
+
+function addNumbers(firstOperand, secondOperand) {
+    return parseFloat(firstOperand) + parseFloat(secondOperand);
+};
+
+function subtractNumbers(firstOperand, secondOperand) {
+    return firstOperand - secondOperand;
+};
+
+function multiplyNumbers(firstOperand, secondOperand) {
+    return firstOperand * secondOperand;
+};
+
+function divideNumbers(firstOperand, secondOperand) {
+    return firstOperand / secondOperand;
 };
