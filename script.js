@@ -39,7 +39,9 @@ function updateDisplay(currentValue) {
         display.value = '';
     } else if (currentValue == '+' || currentValue == '-' || currentValue == '×' || currentValue == '÷') {
         firstOperand = display.value;
+        operator = currentValue;
         console.log(`first operand is ${firstOperand}`);
+        console.log(`operator is ${operator}`);
         display.value += currentValue;
     } else {
         display.value += currentValue;
