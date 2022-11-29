@@ -66,28 +66,28 @@ function storeResult() {
 function calculateResult(firstOperand, secondOperand, operator) {
     switch (true) {
         case (operator === '+'):
-            return addNumbers(firstOperand, secondOperand);
+            return addOperands(firstOperand, secondOperand);
         case (operator === '-'):
-            return subtractNumbers(firstOperand, secondOperand);
+            return subtractOperands(firstOperand, secondOperand);
         case (operator === '×'):
-            return multiplyNumbers(firstOperand, secondOperand);
+            return multiplyOperands(firstOperand, secondOperand);
         case (operator === '÷'):
-            return divideNumbers(firstOperand, secondOperand);
+            return divideOperands(firstOperand, secondOperand);
         };    
 };
 
-function addNumbers(firstOperand, secondOperand) {
+function addOperands(firstOperand, secondOperand) {
     return parseFloat(firstOperand) + parseFloat(secondOperand);
 };
 
-function subtractNumbers(firstOperand, secondOperand) {
+function subtractOperands(firstOperand, secondOperand) {
     return firstOperand - secondOperand;
 };
 
-function multiplyNumbers(firstOperand, secondOperand) {
+function multiplyOperands(firstOperand, secondOperand) {
     return firstOperand * secondOperand;
 };
 
-function divideNumbers(firstOperand, secondOperand) {
+function divideOperands(firstOperand, secondOperand) {
     return firstOperand / secondOperand;
 };
