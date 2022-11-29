@@ -35,14 +35,17 @@ function calculateResult(firstNumber, secondNumber, operator) {
 const display = document.getElementById('display');
 
 function updateDisplay(currentValue) {
-    if (currentValue == 'AC' || currentValue == '=') {
+    if (currentValue == 'AC') {
         display.value = '';
     } else if (currentValue == '+' || currentValue == '-' || currentValue == '×' || currentValue == '÷') {
         firstOperand = display.value;
         operator = currentValue;
         console.log(`first operand is ${firstOperand}`);
         console.log(`operator is ${operator}`);
-        display.value += currentValue;
+        display.value = '';
+    } else if (currentValue == '=') {
+        secondOperand = display.value;
+        console.log(`second operand is ${secondOperand}`);
     } else {
         display.value += currentValue;
     };
