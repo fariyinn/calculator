@@ -28,6 +28,7 @@ function updateDisplay(currentValue) {
         case (currentValue == '='):
             storeSecondOperand();
             storeResult();
+            resetFirstOperandToResult();
             console.log(`second operand is ${secondOperand}`);
             console.log(`result is ${result}`);
             break;
@@ -61,6 +62,10 @@ function storeSecondOperand() {
 function storeResult() {
     result = calculateResult(firstOperand,secondOperand,operator);
     display.value = result;
+};
+
+function resetFirstOperandToResult() {
+    firstOperand = result;
 };
 
 function calculateResult(firstOperand, secondOperand, operator) {
