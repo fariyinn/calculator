@@ -16,6 +16,10 @@ function updateDisplay(currentValue) {
     switch (true) {
         case (currentValue == 'AC'):
             clearAllOperationValues();
+            console.log(`first operand is ${firstOperand}`);
+            console.log(`operator is ${operator}`);
+            console.log(`second operand is ${secondOperand}`);
+            console.log(`result is ${result}`);
             break;
 
         case (currentValue == '+' || currentValue == '-' || currentValue == '×' || currentValue == '÷'):
@@ -23,12 +27,16 @@ function updateDisplay(currentValue) {
             storeOperator(currentValue);
             console.log(`first operand is ${firstOperand}`);
             console.log(`operator is ${operator}`);
+            console.log(`second operand is ${secondOperand}`);
+            console.log(`result is ${result}`);
             break;
 
         case (currentValue == '='):
             storeSecondOperand();
             storeResult();
             resetFirstOperandToResult();
+            console.log(`first operand is ${firstOperand}`);
+            console.log(`operator is ${operator}`);
             console.log(`second operand is ${secondOperand}`);
             console.log(`result is ${result}`);
             break;
