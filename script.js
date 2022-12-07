@@ -27,6 +27,7 @@ function updateDisplay(currentValue) {
         case (currentValue == '='):
             storeSecondOperand();
             storeResult();
+            displayResult();
             resetFirstOperandToResult();
             break;
 
@@ -61,6 +62,9 @@ function storeSecondOperand() {
 
 function storeResult() {
     result = calculateResult(firstOperand,secondOperand,operator);
+};
+
+function displayResult() {
     display.value = result;
 };
 
