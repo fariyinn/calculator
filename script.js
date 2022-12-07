@@ -15,7 +15,7 @@ buttons.forEach((button) => {
 function updateDisplay(currentValue) {
     switch (true) {
         case (currentValue == 'AC'):
-            clearAllOperationValues();
+            clearAllValues();
             console.log(`first operand is ${firstOperand}`);
             console.log(`operator is ${operator}`);
             console.log(`second operand is ${secondOperand}`);
@@ -46,7 +46,7 @@ function updateDisplay(currentValue) {
     };
 };
 
-function clearAllOperationValues() {
+function clearAllValues() {
     firstOperand = '';
     secondOperand = '';
     operator = '';
