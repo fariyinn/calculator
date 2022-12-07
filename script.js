@@ -29,6 +29,7 @@ function updateDisplay(currentValue) {
             storeResult();
             displayResult();
             resetFirstOperandToResult();
+            clearAllButFirstOperand();
             break;
 
         default:
@@ -70,6 +71,12 @@ function displayResult() {
 
 function resetFirstOperandToResult() {
     firstOperand = result;
+};
+
+function clearAllButFirstOperand() {
+    secondOperand = '';
+    operator = '';
+    result = '';
 };
 
 function calculateResult(firstOperand, secondOperand, operator) {
