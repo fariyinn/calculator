@@ -25,6 +25,7 @@ function updateDisplay(currentValue) {
         case (currentValue == '+' || currentValue == '-' || currentValue == '×' || currentValue == '÷'):
             storeFirstOperand();
             storeOperator(currentValue);
+            clearDisplay();
             console.log(`first operand is ${firstOperand}`);
             console.log(`operator is ${operator}`);
             console.log(`second operand is ${secondOperand}`);
@@ -60,6 +61,9 @@ function storeFirstOperand() {
 
 function storeOperator(currentValue) {
     operator = currentValue;
+};
+
+function clearDisplay() {
     display.value = '';
 };
 
