@@ -27,6 +27,7 @@ function updateDisplay(currentValue) {
         case (currentValue == '='):
             storeSecondOperand();
             storeResult();
+            roundResult();
             displayResult();
             break;
 
@@ -51,6 +52,7 @@ function checkForExistingOperands() {
 function checkForExistingOperation() {
     if (firstOperand != '' && secondOperand != '') {
         storeResult();
+        roundResult();
         displayResult();
         resetFirstOperandToResult();
         clearAllButFirstOperand();
@@ -83,6 +85,10 @@ function storeSecondOperand() {
 
 function storeResult() {
     result = calculateResult(firstOperand,secondOperand,operator);
+};
+
+function roundResult() {
+    result = Math.round(result * 100) / 100;
 };
 
 function displayResult() {
