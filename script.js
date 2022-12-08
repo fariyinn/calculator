@@ -19,21 +19,41 @@ function updateDisplay(currentValue) {
             break;
 
         case (currentValue == '+' || currentValue == '-' || currentValue == '×' || currentValue == '÷'):
-            storeFirstOperand();
+            checkForExistingOperands();
+            checkForExistingOperation();
             storeOperator(currentValue);
-            clearDisplay();
             break;
 
         case (currentValue == '='):
             storeSecondOperand();
             storeResult();
             displayResult();
-            resetFirstOperandToResult();
-            clearAllButFirstOperand();
+            break;
+
+        case (display.value == firstOperand || display.value == secondOperand || display.value == result):
+            clearDisplay();
+            display.value = currentValue;
             break;
 
         default:
             display.value += currentValue;
+    };
+};
+
+function checkForExistingOperands() {
+    if (firstOperand == '') {
+        storeFirstOperand();
+    } else if (firstOperand != '' && secondOperand == '') {
+        storeSecondOperand();
+    };
+};
+
+function checkForExistingOperation() {
+    if (firstOperand != '' && secondOperand != '') {
+        storeResult();
+        displayResult();
+        resetFirstOperandToResult();
+        clearAllButFirstOperand();
     };
 };
 
