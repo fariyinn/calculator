@@ -18,6 +18,11 @@ function updateDisplay(currentValue) {
             clearAllValues();
             break;
 
+        case (display.value == '' && currentValue == '0'):
+        case (currentValue == '0' && (display.value == firstOperand || display.value == secondOperand || display.value == result)):
+            clearDisplay();
+            break;
+
         case (currentValue == '+' || currentValue == '-' || currentValue == '×' || currentValue == '÷'):
             checkForExistingOperands();
             checkForExistingOperation();
