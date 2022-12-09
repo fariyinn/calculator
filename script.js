@@ -24,6 +24,10 @@ function updateDisplay(currentValue) {
             storeOperator(currentValue);
             break;
 
+        case (currentValue == '=' && firstOperand == '' && secondOperand == '' && operator == ''):
+            displayErrorMessage();
+            break;
+
         case (currentValue == '='):
             storeSecondOperand();
             storeResult();
@@ -39,6 +43,10 @@ function updateDisplay(currentValue) {
         default:
             display.value += currentValue;
     };
+};
+
+function displayErrorMessage() {
+    display.value = 'ERROR: PRESS AC';
 };
 
 function checkForExistingOperands() {
