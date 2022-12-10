@@ -27,9 +27,11 @@ function updateDisplay(currentValue) {
             checkForExistingOperands();
             checkForExistingOperation();
             storeOperator(currentValue);
+            clearDisplay();
             break;
 
         case (currentValue == '=' && firstOperand == '' && secondOperand == '' && operator == ''):
+        case (currentValue == '=' && display.value == '' && secondOperand == ''):
             displayErrorMessage();
             break;
 
