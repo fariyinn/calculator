@@ -6,6 +6,7 @@ let result = '';
 const display = document.getElementById('display');
 const buttons = document.querySelectorAll('button');
 const decimal = document.getElementById('decimal');
+const backspace = document.getElementById('backspace');
 
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
@@ -22,6 +23,10 @@ function updateDisplay(currentValue) {
         case (currentValue == '.'):
             display.value += currentValue;
             disableDecimal();
+            break;
+
+        case (currentValue == '←'):
+            display.value = display.value.slice(0, -1);
             break;
 
         case (display.value == '' && currentValue == '0'):
