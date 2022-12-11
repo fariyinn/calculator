@@ -20,6 +20,11 @@ function updateDisplay(currentValue) {
             clearAllValues();
             break;
 
+        case (currentValue == '←'):
+            checkIfLastDigitDecimal();
+            removeLastDigit();
+            break;
+
         case (display.value == firstOperand || display.value == secondOperand || display.value == result):
         case (display.value == result && currentValue == '.'):
             clearDisplay();
@@ -29,11 +34,6 @@ function updateDisplay(currentValue) {
         case (currentValue == '.'):
             addCurrentValue(currentValue);
             disableDecimal();
-            break;
-
-        case (currentValue == '←'):
-            checkIfLastDigitDecimal();
-            removeLastDigit();
             break;
 
         case (display.value == '' && currentValue == '0'):
