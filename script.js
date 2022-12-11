@@ -21,7 +21,7 @@ function updateDisplay(currentValue) {
             break;
 
         case (currentValue == '.'):
-            display.value += currentValue;
+            addCurrentValue(currentValue);
             disableDecimal();
             break;
 
@@ -59,8 +59,12 @@ function updateDisplay(currentValue) {
             break;
 
         default:
-            display.value += currentValue;
+            addCurrentValue();
     };
+};
+
+function addCurrentValue(currentValue) {
+    display.value += currentValue;
 };
 
 function disableDecimal() {
