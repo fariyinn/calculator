@@ -57,11 +57,18 @@ function updateDisplay(currentValue) {
             storeResult();
             roundResult();
             displayResult();
+            CheckIfResultNaN();
             enableDecimal();
             break;
 
         default:
             addCurrentValue(currentValue);
+    };
+};
+
+function CheckIfResultNaN() {
+    if (isNaN(display.value)) {
+        displayErrorMessage();
     };
 };
 
