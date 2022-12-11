@@ -41,7 +41,7 @@ function updateDisplay(currentValue) {
             clearDisplay();
             break;
 
-        case (currentValue == '+' || currentValue == '-' || currentValue == '×' || currentValue == '÷'):
+        case (currentValue == '+' || currentValue == '-' || currentValue == '×' || currentValue == '÷' || currentValue == '^'):
             checkForExistingOperands();
             checkForExistingOperation();
             storeOperator(currentValue);
@@ -175,6 +175,8 @@ function calculateResult(firstOperand, secondOperand, operator) {
             return multiplyOperands(firstOperand, secondOperand);
         case (operator === '÷'):
             return divideOperands(firstOperand, secondOperand);
+        case (operator === '^'):
+            return powerOperands(firstOperand, secondOperand);
         };    
 };
 
@@ -192,4 +194,8 @@ function multiplyOperands(firstOperand, secondOperand) {
 
 function divideOperands(firstOperand, secondOperand) {
     return firstOperand / secondOperand;
+};
+
+function powerOperands(firstOperand, secondOperand) {
+    return Math.pow(firstOperand, secondOperand);
 };
