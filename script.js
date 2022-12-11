@@ -55,11 +55,11 @@ function updateDisplay(currentValue) {
 
         case (display.value == firstOperand || display.value == secondOperand || display.value == result):
             clearDisplay();
-            display.value = currentValue;
+            addCurrentValue(currentValue);
             break;
 
         default:
-            addCurrentValue();
+            addCurrentValue(currentValue);
     };
 };
 
