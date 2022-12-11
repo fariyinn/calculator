@@ -26,7 +26,7 @@ function updateDisplay(currentValue) {
             break;
 
         case (currentValue == '←'):
-            display.value = display.value.slice(0, -1);
+            removeLastDigit();
             break;
 
         case (display.value == '' && currentValue == '0'):
@@ -61,6 +61,10 @@ function updateDisplay(currentValue) {
         default:
             addCurrentValue(currentValue);
     };
+};
+
+function removeLastDigit() {
+    display.value = display.value.slice(0, -1);
 };
 
 function addCurrentValue(currentValue) {
