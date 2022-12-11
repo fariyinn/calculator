@@ -26,6 +26,7 @@ function updateDisplay(currentValue) {
             break;
 
         case (currentValue == '←'):
+            checkIfLastDigitDecimal();
             removeLastDigit();
             break;
 
@@ -60,6 +61,12 @@ function updateDisplay(currentValue) {
 
         default:
             addCurrentValue(currentValue);
+    };
+};
+
+function checkIfLastDigitDecimal() {
+    if (display.value.slice(-1) == '.') {
+        enableDecimal();
     };
 };
 
