@@ -6,7 +6,6 @@ let result = '';
 const display = document.getElementById('display');
 const buttons = document.querySelectorAll('button');
 const decimal = document.getElementById('decimal');
-const backspace = document.getElementById('backspace');
 
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
