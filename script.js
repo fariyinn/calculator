@@ -19,6 +19,10 @@ function updateDisplay(currentValue) {
             clearAllValues();
             break;
 
+        case (currentValue === '+/-'):
+            changeOperandSign();
+            break;
+
         case (currentValue == '←'):
             checkIfLastDigitDecimal();
             removeLastDigit();
@@ -63,6 +67,10 @@ function updateDisplay(currentValue) {
         default:
             addCurrentValue(currentValue);
     };
+};
+
+function changeOperandSign() {
+    display.value = display.value * -1;
 };
 
 function CheckIfResultNaN() {
