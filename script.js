@@ -24,12 +24,6 @@ function updateDisplay(currentValue) {
             removeLastDigit();
             break;
 
-        case (display.value == firstOperand || display.value == secondOperand || display.value == result):
-        case (display.value == result && currentValue == '.'):
-            clearDisplay();
-            addCurrentValue(currentValue);
-            break;
-
         case (currentValue == '.'):
             addCurrentValue(currentValue);
             disableDecimal();
@@ -58,6 +52,12 @@ function updateDisplay(currentValue) {
             displayResult();
             CheckIfResultNaN();
             enableDecimal();
+            break;
+
+        case (display.value == firstOperand || display.value == secondOperand || display.value == result):
+        case (display.value == result && currentValue == '.'):
+            clearDisplay();
+            addCurrentValue(currentValue);
             break;
 
         default:
