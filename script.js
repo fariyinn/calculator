@@ -13,6 +13,37 @@ buttons.forEach((button) => {
     });
 });
 
+window.addEventListener('keydown', applyPressedKey);
+
+function applyPressedKey(e) {
+    switch (true) {
+        case (e.key >= '0' && e.key <= '9'):
+        case (e.key == '+' || e.key == '-' || e.key == '^' || e.key == '=' || e.key == '.'):
+            updateDisplay(e.key);
+            break;
+
+        case (e.key == '/'):
+            updateDisplay('÷')
+            break;
+
+        case (e.key == '*'):
+            updateDisplay('×');
+            break;
+
+        case (e.key == 'Enter'):
+            updateDisplay('=');
+            break;
+
+        case (e.key === 'Escape'):
+            updateDisplay('AC');
+            break;
+
+        case (e.key === 'Backspace'):
+            updateDisplay('←');
+            break;
+    };
+};
+
 function updateDisplay(currentValue) {
     switch (true) {
         case (currentValue == 'AC'):
