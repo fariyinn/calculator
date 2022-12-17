@@ -163,6 +163,10 @@ button:hover {
     opacity: 0.5;
 }
 
+button:active {
+    opacity: 0.1;
+}
+
 .number {
     background-color: var(--sea-foam-green);
     color: var(--main-font-color);
