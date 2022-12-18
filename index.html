@@ -10,65 +10,67 @@
         <script src = 'https://kit.fontawesome.com/93fc56fb23.js' crossorigin = 'anonymous'></script>
     </head>
     <body>
-        <div class = 'header'>
-            <h1>calcul8r</h1>
-            <i class = 'fa-solid fa-infinity'></i>
-            <div class = 'modal closedModal'>
-                <div class = 'modalBackground'></div>
-                <div class = 'innerModal'>
-                    <h2>Hire me!</h2>
-                    <p>
-                        This calculator was made as a submission for 
-                        <a href = 'https://www.theodinproject.com' target = '_blank' rel = 'noreferrer'>The Odin Project.</a>
-                        Thanks for checking out my project!
-                    </p>
-                    <div class = 'exitButton'>&times;</div>
+        <div class = 'wrapper'>
+            <div class = 'header'>
+                <h1>calcul8r</h1>
+                <i class = 'fa-solid fa-infinity'></i>
+                <div class = 'modal closedModal'>
+                    <div class = 'modalBackground'></div>
+                    <div class = 'innerModal'>
+                        <h2>Hire me!</h2>
+                        <p>
+                            This calculator was made as a submission for 
+                            <a href = 'https://www.theodinproject.com' target = '_blank' rel = 'noreferrer'>The Odin Project.</a>
+                            Thanks for checking out my project!
+                        </p>
+                        <div class = 'exitButton'>&times;</div>
+                    </div>
                 </div>
             </div>
+            <div class = 'calculator'>
+                <div class = 'calculatorTopSection'>
+                    <div class = 'leftSection'>
+                        <button class = 'operator'>+</button>
+                        <button class = 'operator'>-</button>
+                        <button class = 'operator'>×</button>
+                        <button class = 'operator'>÷</button>
+                        <button class = 'operator'>^</button>
+                    </div>
+                    <div class = 'displayContainer'>
+                        <input type = 'text' disabled id = 'display' value = ''/>
+                    </div>
+                    <div class = 'rightSection'>
+                        <button id = 'allClear'>AC</button>
+                        <button id = 'backspace'>←</button>
+                        <button id = 'sign'>+/-</button>
+                        <button id = 'decimal'>.</button>
+                        <button id = 'equals'>=</button>
+                    </div>
+                </div>
+                <div class = 'calculatorBottomSection'>
+                    <button class = 'number'>1</button>
+                    <button class = 'number'>2</button>
+                    <button class = 'number'>3</button>
+                    <button class = 'number'>4</button>
+                    <button class = 'number'>5</button>
+                    <button class = 'number'>6</button>
+                    <button class = 'number'>7</button>
+                    <button class = 'number'>8</button>
+                    <button class = 'number'>9</button>
+                    <button class = 'number'>0</button>
+                </div>
+            </div>
+            <footer>
+                <p class = 'footerName'> fariyinn &copy;
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script>
+                    <a href = 'https://github.com/fariyinn' target = '_blank'>
+                        <i id = 'github' class = 'fa-brands fa-github-alt'></i>
+                    </a>
+                </p>
+            </footer>
         </div>
-        <div class = 'calculator'>
-            <div class = 'calculatorTopSection'>
-                <div class = 'leftSection'>
-                    <button class = 'operator'>+</button>
-                    <button class = 'operator'>-</button>
-                    <button class = 'operator'>×</button>
-                    <button class = 'operator'>÷</button>
-                    <button class = 'operator'>^</button>
-                </div>
-                <div class = 'displayContainer'>
-                    <input type = 'text' disabled id = 'display' value = ''/>
-                </div>
-                <div class = 'rightSection'>
-                    <button id = 'allClear'>AC</button>
-                    <button id = 'backspace'>←</button>
-                    <button id = 'sign'>+/-</button>
-                    <button id = 'decimal'>.</button>
-                    <button id = 'equals'>=</button>
-                </div>
-            </div>
-            <div class = 'calculatorBottomSection'>
-                <button class = 'number'>1</button>
-                <button class = 'number'>2</button>
-                <button class = 'number'>3</button>
-                <button class = 'number'>4</button>
-                <button class = 'number'>5</button>
-                <button class = 'number'>6</button>
-                <button class = 'number'>7</button>
-                <button class = 'number'>8</button>
-                <button class = 'number'>9</button>
-                <button class = 'number'>0</button>
-            </div>
-        </div>
-        <footer>
-            <p class = 'footerName'> fariyinn &copy;
-                <script>
-                    document.write(new Date().getFullYear())
-                </script>
-                <a href = 'https://github.com/fariyinn' target = '_blank'>
-                    <i id = 'github' class = 'fa-brands fa-github-alt'></i>
-                </a>
-            </p>
-        </footer>
         <script src = './script.js'></script>
     </body>
 </html>
