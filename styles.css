@@ -47,6 +47,7 @@ h1 {
     text-align: center;
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
+    max-width: 50vw;
 }
 
 .displayContainer {
