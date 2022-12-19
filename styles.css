@@ -153,3 +153,9 @@ button:active {
     border-style: var(--main-border-style);
     padding: var(--other-buttons-padding);
 }
+
+@media (min-width: 600px) {
+    .number {
+        margin: 27px;
+    }
+}
