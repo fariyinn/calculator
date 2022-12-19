@@ -72,6 +72,7 @@ h1 {
 .calculatorBottomSection {
     display: flex;
     justify-content: center;
+    margin: 5px;
 }
 
 .operator {
@@ -99,9 +100,8 @@ button:active {
     font-size: var(--button-font-size);
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
-    display: flex;
-    justify-content: space-between;
     padding: var(--number-button-padding);
+    margin: 2px;
 }
 
 #allClear {
