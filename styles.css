@@ -44,65 +44,6 @@ h1 {
     transform: scale(1.5);
 }
 
-a:link {
-    color: var(--main-font-color);
-    text-decoration: none;
-}
-
-a:visited {
-    color: white;
-}
-
-a:hover {
-    color: black;
-}
-
-.modal {
-    color: var(--main-font-color);
-    text-align: center;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.modalBackground {
-    background-color: rgba(0,0,0,0.8);
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-}
-
-.innerModal {
-    background-color: var(--muted-teal);
-    font-size: 20px;
-    padding: 10px;
-    margin: auto;
-    position: relative;
-    max-width: 500px;
-    max-height: 200px;
-}
-
-.exitButton {
-    font-size: var(--body-font-size);
-    position: absolute;
-    top: -30px;
-}
-
-.exitButton:hover {
-    cursor: alias;
-    opacity: 0.8;
-}
-
-.closedModal {
-    display: none;
-}
-
 .calculator {
     display: flex;
     flex-direction: column;

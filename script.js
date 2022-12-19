@@ -237,11 +237,3 @@ function divideOperands(firstOperand, secondOperand) {
 function powerOperands(firstOperand, secondOperand) {
     return Math.pow(firstOperand, secondOperand);
 };
-
-document.querySelector('.fa-infinity').addEventListener('click', toggleModal);
-document.querySelector('.exitButton').addEventListener('click', toggleModal);
-document.querySelector('.modalBackground').addEventListener('click', toggleModal);
-
-function toggleModal() {
-    document.querySelector('.modal').classList.toggle('closedModal');
-};
