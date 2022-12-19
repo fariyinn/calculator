@@ -163,26 +163,3 @@ button:active {
     padding: 8px;
     margin: 5px 0px;
 }
-
-footer {
-    margin-bottom: auto;
-    display: flex;
-    justify-content: center;
-}
-
-.footerName {
-    color: var(--ferozi);
-    font-size: var(--footer-font-size);
-}
-
-#github {
-    color: var(--muted-plum);
-    font-size: var(--footer-font-size);
-    padding: 4px;
-    transition: transform 1s;
-}
-
-#github:hover {
-    color: var(--sage);
-    transform: rotate(180deg) scale(1.5);
-}
