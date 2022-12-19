@@ -32,18 +32,6 @@ h1 {
     transform: translateX(-350px) translateY(160px) rotateZ(-30deg);
 }
 
-.fa-infinity {
-    color: var(--mauve);
-    font-size: var(--infinity-size);
-    transition: transform 1s;
-}
-
-.fa-infinity:hover {
-    cursor: help;
-    opacity: 0.5;
-    transform: scale(1.5);
-}
-
 .calculator {
     display: flex;
     flex-direction: column;
