@@ -3,21 +3,34 @@
 :root {
     --main-font-color:white;
     --mauve: rgba(161,113,136,1);
-    --sage: #357466;
+    --steel-blue: #879FB7;
     --grape: #5e5297;
+    --dark-grape: #413969;
     --sea-foam-green: #22ae97;
     --muted-plum: #6b5c7e;
     --ferozi: #02c3cd;
     --muted-teal: #41949b;
+    --baby-blue: #99CCCC;
     font-family: 'Dosis', sans-serif;
     --header-font-size: 3vw;
     --display-font-size: 6vw;
     --button-font-size: 2vw;
+    --footer-font-size: 4vw;
     --main-border-radius: 10px 70px;
     --main-border-style: none;
     --operator-button-padding: 15px 10px;
     --number-button-padding: 15px 10px;
     --other-buttons-padding: 15px 5px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .header {
@@ -145,7 +158,7 @@ button:active {
 }
 
 #backspace {
-    background-color: var(--sage);
+    background-color: var(--steel-blue);
     color: var(--main-font-color);
     font-family: inherit;
     font-size: var(--button-font-size);
@@ -154,8 +167,51 @@ button:active {
     padding: var(--other-buttons-padding);
 }
 
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--baby-blue);
+    height: 3vh;
+}
+
+.footerName {
+    color: var(--main-font-color);
+    font-size: var(--footer-font-size); 
+}
+
+#github {
+    color: var(--grape);
+    font-size: var(--footer-font-size); 
+    padding: 5px;
+}
+
+#github:hover {
+    color: var(--dark-grape);
+}
+
 @media (min-width: 600px) {
     .number {
         margin: 27px;
+    }
+
+    footer {
+        height: 5vh;
+    }
+
+    .footerName, #github {
+        font-size: 2vw;
+    }
+
+    #github {
+        transition: transform 1s;
+    }
+
+    #github:hover {
+        transform: rotate(180deg) scale(1.5);
     }
 }
