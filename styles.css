@@ -42,7 +42,6 @@ h1 {
     text-align: center;
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
-    padding: 80px;
 }
 
 .displayContainer {
@@ -53,19 +52,16 @@ h1 {
 .leftSection {
     display: flex;
     flex-direction: column;
-    padding: 20px;
 }
 
 .rightSection {
     display: flex;
     flex-direction: column;
-    padding: 20px;
 }
 
 .calculatorBottomSection {
     display: flex;
     justify-content: center;
-    margin: 20px;
 }
 
 .operator {
@@ -74,8 +70,6 @@ h1 {
     font-family: inherit;
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
-    padding: 8px;
-    margin: 5px 0px;
 }
 
 button:hover {
@@ -92,8 +86,6 @@ button:active {
     font-family: inherit;
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
-    padding: 20px;
-    margin: 5px;
     display: flex;
     justify-content: space-between;
 }
@@ -104,8 +96,6 @@ button:active {
     font-family: inherit;
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
-    padding: 8px;
-    margin: 5px 0px;
 }
 
 #decimal {
@@ -114,8 +104,6 @@ button:active {
     font-family: inherit;
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
-    padding: 8px;
-    margin: 5px 0px;
 }
 
 #sign {
@@ -124,8 +112,6 @@ button:active {
     font-family: inherit;
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
-    padding: 8px;
-    margin: 5px 0px;
 }
 
 #equals {
@@ -134,8 +120,6 @@ button:active {
     font-family: inherit;
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
-    padding: 8px;
-    margin: 5px 0px;
 }
 
 #backspace {
@@ -144,6 +128,4 @@ button:active {
     font-family: inherit;
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
-    padding: 8px;
-    margin: 5px 0px;
 }
