@@ -14,12 +14,11 @@
     font-family: 'Dosis', sans-serif;
     --header-font-size: 6vw;
     --display-font-size: 6vw;
-    --button-font-size: 2vw;
+    --button-font-size: 3vw;
     --footer-font-size: 4vw;
     --main-border-radius: 10px 70px;
     --main-border-style: none;
-    --operator-button-padding: 25px 15px;
-    --number-button-padding: 25px 15px;
+    --operator-number-buttons-padding: 25px 15px;
     --other-buttons-padding: 25px 10px;
     --side-button-margins: 1vh;
 }
@@ -73,13 +72,7 @@ h1 {
     min-height: 50vh;
 }
 
-.leftSection {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.rightSection {
+.leftSection, .rightSection {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,12 +86,50 @@ h1 {
 
 .operator {
     background-color: var(--mauve);
+    margin: var(--side-button-margins);
+}
+
+.number {
+    background-color: var(--sea-foam-green);
+    margin: 2px;
+}
+
+#allClear {
+    background-color: var(--muted-plum);
+}
+
+#decimal {
+    background-color: var(--ferozi);
+}
+
+#sign {
+    background-color: var(--muted-teal);
+}
+
+#equals {
+    background-color: var(--grape);
+}
+
+#backspace {
+    background-color: var(--steel-blue);
+}
+
+.number, .operator {
+    padding: var(--operator-number-buttons-padding);
+}
+
+.number, .operator, #backspace, #equals, 
+#sign, #decimal, #allClear {
     color: var(--main-font-color);
     font-family: inherit;
     font-size: var(--button-font-size);
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
-    padding: var(--operator-button-padding);
+}
+
+#backspace, #equals, #sign, 
+#decimal, #allClear {
+    padding: var(--other-buttons-padding);
     margin: var(--side-button-margins);
 }
 
@@ -108,72 +139,6 @@ button:hover {
 
 button:active {
     opacity: 0.1;
-}
-
-.number {
-    background-color: var(--sea-foam-green);
-    color: var(--main-font-color);
-    font-family: inherit;
-    font-size: var(--button-font-size);
-    border-radius: var(--main-border-radius);
-    border-style: var(--main-border-style);
-    padding: var(--number-button-padding);
-    margin: 2px;
-}
-
-#allClear {
-    background-color: var(--muted-plum);
-    color: var(--main-font-color);
-    font-family: inherit;
-    font-size: var(--button-font-size);
-    border-radius: var(--main-border-radius);
-    border-style: var(--main-border-style);
-    padding: var(--other-buttons-padding);
-    margin: var(--side-button-margins);
-}
-
-#decimal {
-    background-color: var(--ferozi);
-    color: var(--main-font-color);
-    font-family: inherit;
-    font-size: var(--button-font-size);
-    border-radius: var(--main-border-radius);
-    border-style: var(--main-border-style);
-    padding: var(--other-buttons-padding);
-    margin: var(--side-button-margins);
-}
-
-#sign {
-    background-color: var(--muted-teal);
-    color: var(--main-font-color);
-    font-family: inherit;
-    font-size: var(--button-font-size);
-    border-radius: var(--main-border-radius);
-    border-style: var(--main-border-style);
-    padding: var(--other-buttons-padding);
-    margin: var(--side-button-margins);
-}
-
-#equals {
-    background-color: var(--grape);
-    color: var(--main-font-color);
-    font-family: inherit;
-    font-size: var(--button-font-size);
-    border-radius: var(--main-border-radius);
-    border-style: var(--main-border-style);
-    padding: var(--other-buttons-padding);
-    margin: var(--side-button-margins);
-}
-
-#backspace {
-    background-color: var(--steel-blue);
-    color: var(--main-font-color);
-    font-family: inherit;
-    font-size: var(--button-font-size);
-    border-radius: var(--main-border-radius);
-    border-style: var(--main-border-style);
-    padding: var(--other-buttons-padding);
-    margin: var(--side-button-margins);
 }
 
 footer {
@@ -215,11 +180,13 @@ footer {
 
     .number {
         margin: 20px;
+        font-size: 2vw;
     }
 
     .operator, #allClear, #decimal,
     #backspace, #equals, #sign {
         margin: 0;
+        font-size: 2vw;
     }
 
     footer {
