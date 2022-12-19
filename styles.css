@@ -57,7 +57,7 @@ h1 {
 }
 
 #display {
-    background-color: black;
+    background-color: red;
     color: var(--mauve);
     font-family: inherit;
     font-size: var(--display-font-size);
