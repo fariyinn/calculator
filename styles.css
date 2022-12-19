@@ -10,11 +10,6 @@
     --ferozi: #02c3cd;
     --muted-teal: #41949b;
     font-family: 'Dosis', sans-serif;
-    --header-font-size: 70px;
-    --body-font-size: 80px;
-    --calculator-font-size: 40px;
-    --footer-font-size: 30px;
-    --infinity-size: 50px;
     --main-border-radius: 20px;
     --main-border-style: none;
 }
@@ -26,10 +21,7 @@
 h1 {
     color: var(--mauve);
     font-family: inherit;
-    font-size: var(--header-font-size);
     text-align:center;
-    margin: -20px;
-    transform: translateX(-350px) translateY(160px) rotateZ(-30deg);
 }
 
 .calculator {
@@ -47,7 +39,6 @@ h1 {
     background-color: black;
     color: var(--mauve);
     font-family: inherit;
-    font-size: var(--body-font-size);
     text-align: center;
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
@@ -81,7 +72,6 @@ h1 {
     background-color: var(--mauve);
     color: var(--main-font-color);
     font-family: inherit;
-    font-size: var(--calculator-font-size);
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
     padding: 8px;
@@ -100,7 +90,6 @@ button:active {
     background-color: var(--sea-foam-green);
     color: var(--main-font-color);
     font-family: inherit;
-    font-size: var(--calculator-font-size);
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
     padding: 20px;
@@ -113,7 +102,6 @@ button:active {
     background-color: var(--muted-plum);
     color: var(--main-font-color);
     font-family: inherit;
-    font-size: var(--calculator-font-size);
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
     padding: 8px;
@@ -124,7 +112,6 @@ button:active {
     background-color: var(--ferozi);
     color: var(--main-font-color);
     font-family: inherit;
-    font-size: var(--calculator-font-size);
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
     padding: 8px;
@@ -135,7 +122,6 @@ button:active {
     background-color: var(--muted-teal);
     color: var(--main-font-color);
     font-family: inherit;
-    font-size: var(--calculator-font-size);
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
     padding: 8px;
@@ -146,7 +132,6 @@ button:active {
     background-color: var(--grape);
     color: var(--main-font-color);
     font-family: inherit;
-    font-size: var(--calculator-font-size);
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
     padding: 8px;
@@ -157,7 +142,6 @@ button:active {
     background-color: var(--sage);
     color: var(--main-font-color);
     font-family: inherit;
-    font-size: var(--calculator-font-size);
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
     padding: 8px;
