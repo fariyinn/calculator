@@ -10,12 +10,16 @@
     --ferozi: #02c3cd;
     --muted-teal: #41949b;
     font-family: 'Dosis', sans-serif;
+    --header-font-size: 3vw;
+    --display-font-size: 5vw;
+    --button-font-size: 2vw;
     --main-border-radius: 20px;
     --main-border-style: none;
 }
 
 .header {
     text-align: center;
+    font-size: var(--header-font-size);
 }
 
 h1 {
@@ -39,6 +43,7 @@ h1 {
     background-color: black;
     color: var(--mauve);
     font-family: inherit;
+    font-size: var(--display-font-size);
     text-align: center;
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
@@ -68,6 +73,7 @@ h1 {
     background-color: var(--mauve);
     color: var(--main-font-color);
     font-family: inherit;
+    font-size: var(--button-font-size);
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
 }
@@ -84,6 +90,7 @@ button:active {
     background-color: var(--sea-foam-green);
     color: var(--main-font-color);
     font-family: inherit;
+    font-size: var(--button-font-size);
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
     display: flex;
@@ -94,6 +101,7 @@ button:active {
     background-color: var(--muted-plum);
     color: var(--main-font-color);
     font-family: inherit;
+    font-size: var(--button-font-size);
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
 }
@@ -102,6 +110,7 @@ button:active {
     background-color: var(--ferozi);
     color: var(--main-font-color);
     font-family: inherit;
+    font-size: var(--button-font-size);
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
 }
@@ -110,6 +119,7 @@ button:active {
     background-color: var(--muted-teal);
     color: var(--main-font-color);
     font-family: inherit;
+    font-size: var(--button-font-size);
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
 }
@@ -118,6 +128,7 @@ button:active {
     background-color: var(--grape);
     color: var(--main-font-color);
     font-family: inherit;
+    font-size: var(--button-font-size);
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
 }
@@ -126,6 +137,7 @@ button:active {
     background-color: var(--sage);
     color: var(--main-font-color);
     font-family: inherit;
+    font-size: var(--button-font-size);
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
 }
