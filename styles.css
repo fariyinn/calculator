@@ -13,8 +13,11 @@
     --header-font-size: 3vw;
     --display-font-size: 5vw;
     --button-font-size: 2vw;
-    --main-border-radius: 20px;
+    --main-border-radius: 10px 70px;
     --main-border-style: none;
+    --operator-button-padding: 15px 10px;
+    --number-button-padding: 15px 10px;
+    --other-buttons-padding: 15px 5px;
 }
 
 .header {
@@ -77,6 +80,7 @@ h1 {
     font-size: var(--button-font-size);
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
+    padding: var(--operator-button-padding);
 }
 
 button:hover {
@@ -96,6 +100,7 @@ button:active {
     border-style: var(--main-border-style);
     display: flex;
     justify-content: space-between;
+    padding: var(--number-button-padding);
 }
 
 #allClear {
@@ -105,6 +110,7 @@ button:active {
     font-size: var(--button-font-size);
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
+    padding: var(--other-buttons-padding);
 }
 
 #decimal {
@@ -114,6 +120,7 @@ button:active {
     font-size: var(--button-font-size);
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
+    padding: var(--other-buttons-padding);
 }
 
 #sign {
@@ -123,6 +130,7 @@ button:active {
     font-size: var(--button-font-size);
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
+    padding: var(--other-buttons-padding);
 }
 
 #equals {
@@ -132,6 +140,7 @@ button:active {
     font-size: var(--button-font-size);
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
+    padding: var(--other-buttons-padding);
 }
 
 #backspace {
@@ -141,4 +150,5 @@ button:active {
     font-size: var(--button-font-size);
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
+    padding: var(--other-buttons-padding);
 }
