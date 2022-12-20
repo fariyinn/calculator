@@ -12,7 +12,7 @@
     --muted-teal: #41949b;
     --baby-blue: #99CCCC;
     font-family: 'Dosis', sans-serif;
-    --header-font-size: 6vw;
+    --infinity-font-size: 10vh;
     --display-font-size: 6vw;
     --button-font-size: 3vw;
     --footer-font-size: 4vw;
@@ -35,13 +35,82 @@
 
 .header {
     text-align: center;
-    font-size: var(--header-font-size);
 }
 
 h1 {
+    margin: 2px;
+}
+
+.fa-infinity {
     color: var(--mauve);
-    font-family: inherit;
-    text-align:center;
+    font-size: var(--infinity-font-size);
+    transition: transform 1s;
+}
+
+.fa-infinity:hover {
+    cursor: help;
+    opacity: 0.5;
+    transform: scale(1.5);
+}
+
+a:link {
+    color: var(--main-font-color);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--main-font-color);
+}
+
+a:hover {
+    color: black;
+}
+
+.modal {
+    color: var(--main-font-color);
+    text-align: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.modalBackground {
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+.innerModal {
+    background-color: var(--steel-blue);
+    font-size: 20px;
+    padding: 10px;
+    margin: auto;
+    position: relative;
+    max-width: 500px;
+    max-height: 150px;
+}
+
+.exitButton {
+    font-size: 5vh;
+    position: absolute;
+    left: 10px;
+    bottom: 120px;
+}
+
+.exitButton:hover {
+    cursor: alias;
+    opacity: 0.8;
+}
+
+.closedModal {
+    display: none;
 }
 
 .calculator {
@@ -91,7 +160,7 @@ h1 {
 
 .number {
     background-color: var(--sea-foam-green);
-    margin: 2px;
+    margin: 1px;
 }
 
 #allClear {
@@ -123,6 +192,7 @@ h1 {
     color: var(--main-font-color);
     font-family: inherit;
     font-size: var(--button-font-size);
+    font-weight: 900;
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
 }
@@ -173,9 +243,13 @@ footer {
         background-color: black;
         color: var(--mauve);
     }
+    
+    .fa-infinity {
+        font-size: 6vw;
+    }
 
-    .header {
-        font-size: 4vh;
+    .exitButton {
+        font-size: var(--button-font-size);
     }
 
     .number {
