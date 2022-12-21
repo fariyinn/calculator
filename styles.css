@@ -18,9 +18,9 @@
     --footer-font-size: 4vw;
     --main-border-radius: 10px 70px;
     --main-border-style: none;
-    --operator-number-buttons-padding: 25px 15px;
+    --operator-number-buttons-padding: 25px 13px;
     --other-buttons-padding: 25px 10px;
-    --side-button-margins: 1vw;
+    --side-button-margins: 2vw;
 }
 
 .wrapper {
@@ -156,7 +156,7 @@ a:hover {
 
 .operator {
     background-color: var(--mauve);
-    margin: var(--side-button-margins);
+    margin-left: var(--side-button-margins);
 }
 
 .number {
@@ -201,7 +201,7 @@ a:hover {
 #backspace, #equals, #sign, 
 #decimal, #allClear {
     padding: var(--other-buttons-padding);
-    margin: var(--side-button-margins);
+    margin-right: var(--side-button-margins);
 }
 
 button:hover {
