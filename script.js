@@ -85,7 +85,7 @@ function updateDisplay(currentValue) {
             storeResult();
             roundResult();
             displayResult();
-            CheckIfResultNaN();
+            checkIfResultNaN();
             enableDecimal();
             break;
 
@@ -104,7 +104,7 @@ function changeOperandSign() {
     display.value = display.value * -1;
 };
 
-function CheckIfResultNaN() {
+function checkIfResultNaN() {
     if (isNaN(display.value)) {
         displayErrorMessage();
     };
@@ -252,4 +252,4 @@ document.querySelector('.modalBackground').addEventListener('click', toggleModal
 
 function toggleModal() {
     document.querySelector('.modal').classList.toggle('closedModal');
-}
+};
