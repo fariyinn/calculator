@@ -57,6 +57,7 @@ function updateDisplay(currentValue) {
         case (currentValue == '←'):
             checkIfLastDigitDecimal();
             removeLastDigit();
+            clearAllButDisplay();
             break;
 
         case (currentValue == '.'):
@@ -206,6 +207,13 @@ function resetFirstOperandToResult() {
 };
 
 function clearAllButFirstOperand() {
+    secondOperand = '';
+    operator = '';
+    result = '';
+};
+
+function clearAllButDisplay() {
+    firstOperand = '';
     secondOperand = '';
     operator = '';
     result = '';
