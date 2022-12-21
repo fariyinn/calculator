@@ -12,3 +12,4 @@ This was built as a submission for [The Odin Project](https://www.theodinproject
  - [x] Modal
  - [x] Header and footer with CSS transitions and transforms
  - [x] Mobile first design with media query for desktop support
+ - [x] Use of regular expressions
