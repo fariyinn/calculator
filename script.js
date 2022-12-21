@@ -60,7 +60,7 @@ function updateDisplay(currentValue) {
             break;
 
         case (currentValue == '.'):
-            addCurrentValue(currentValue);
+            checkIfDecimalExists(currentValue);
             disableDecimal();
             break;
 
@@ -113,6 +113,14 @@ function CheckIfResultNaN() {
 function checkIfLastDigitDecimal() {
     if (display.value.slice(-1) == '.') {
         enableDecimal();
+    };
+};
+
+function checkIfDecimalExists(currentValue) {
+    if (display.value.match(/\./)) {
+        return;
+    } else {
+        addCurrentValue(currentValue);
     };
 };
 
