@@ -20,7 +20,7 @@
     --main-border-style: none;
     --operator-number-buttons-padding: 25px 15px;
     --other-buttons-padding: 25px 10px;
-    --side-button-margins: 1vh;
+    --side-button-margins: 1vw;
 }
 
 .wrapper {
