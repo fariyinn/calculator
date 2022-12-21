@@ -1,4 +1,4 @@
-# calcul8r
+# calcul♾️r
 
 A simple and unique calculator.
 
