@@ -147,7 +147,7 @@ function enableDecimal() {
 };
 
 function displayErrorMessage() {
-    display.value = 'ERROR: PRESS AC';
+    display.value = 'PRESS AC';
 };
 
 function checkForExistingOperands() {
