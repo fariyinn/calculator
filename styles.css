@@ -126,11 +126,12 @@ a:hover {
 }
 
 #display {
-    background-color: var(--baby-blue);
+    background-color: transparent;
     color: black;
     font-family: inherit;
     font-size: var(--display-font-size);
     text-align: center;
+    box-shadow: 0 0 10px var(--baby-blue); 
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
     max-width: 60vw;
@@ -242,6 +243,7 @@ footer {
 @media (min-width: 600px) {
     #display {
         background-color: black;
+        box-shadow: none;
         color: var(--mauve);
     }
     
