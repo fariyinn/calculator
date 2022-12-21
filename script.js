@@ -52,6 +52,7 @@ function updateDisplay(currentValue) {
 
         case (currentValue === '+/-'):
             changeOperandSign();
+            clearAllButDisplay();
             break;
 
         case (currentValue == '←'):
