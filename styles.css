@@ -131,7 +131,7 @@ a:hover {
     font-family: inherit;
     font-size: var(--display-font-size);
     text-align: center;
-    box-shadow: 0 0 10px var(--baby-blue); 
+    box-shadow: 0 0 100px var(--baby-blue); 
     border-radius: var(--main-border-radius);
     border-style: var(--main-border-style);
     max-width: 60vw;
