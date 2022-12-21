@@ -131,7 +131,11 @@ function removeLastDigit() {
 };
 
 function addCurrentValue(currentValue) {
-    display.value += currentValue;
+    if (display.value.length >= 8) {
+        return;
+    } else {
+        display.value += currentValue;
+    };
 };
 
 function disableDecimal() {
