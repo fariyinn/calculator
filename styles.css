@@ -97,10 +97,6 @@ a:hover {
     max-height: 150px;
 }
 
-.innerModal:target {
-    opacity: 1;
-}
-
 .exitButton {
     font-size: 5vh;
     position: absolute;
