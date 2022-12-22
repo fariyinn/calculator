@@ -259,9 +259,15 @@ footer {
         font-size: 2vw;
     }
 
+    .number, .operator {
+        padding: 25px 15px;
+    }
+
     .operator, #allClear, #decimal,
     #backspace, #equals, #sign {
         margin: 0;
+        margin-left: 0;
+        margin-right: 0;
         font-size: 2vw;
     }
 
